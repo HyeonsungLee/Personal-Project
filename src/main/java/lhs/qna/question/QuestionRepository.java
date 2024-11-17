@@ -1,4 +1,4 @@
-package lhs.qna;
+package lhs.qna.question;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

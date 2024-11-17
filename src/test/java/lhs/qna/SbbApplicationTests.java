@@ -1,6 +1,10 @@
 package lhs.qna;
 
 import jakarta.transaction.Transactional;
+import lhs.qna.answer.Answer;
+import lhs.qna.answer.AnswerRepository;
+import lhs.qna.question.Question;
+import lhs.qna.question.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
