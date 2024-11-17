@@ -2,6 +2,7 @@ package lhs.qna;
 
 import lhs.qna.question.Question;
 import lhs.qna.question.QuestionRepository;
+import lhs.qna.question.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,11 +14,11 @@ import java.util.List;
 @Controller
 public class QuestionController {
 
-    private final QuestionRepository questionRepository;
+    private final QuestionService questionService;
 
     @GetMapping("/question/list")
     public String list(Model model) {
-        List<Question> questionList = this.questionRepository.findAll();
+        List<Question> questionList = questionService.getList();
         model.addAttribute("questionList", questionList);
         return "question_list";
     }
