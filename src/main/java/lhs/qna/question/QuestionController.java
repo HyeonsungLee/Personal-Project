@@ -1,8 +1,5 @@
-package lhs.qna;
+package lhs.qna.question;
 
-import lhs.qna.question.Question;
-import lhs.qna.question.QuestionRepository;
-import lhs.qna.question.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
