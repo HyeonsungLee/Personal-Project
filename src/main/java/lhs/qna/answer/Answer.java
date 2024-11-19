@@ -2,6 +2,7 @@ package lhs.qna.answer;
 
 import jakarta.persistence.*;
 import lhs.qna.question.Question;
+import lhs.qna.user.SiteUser;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,4 +23,7 @@ public class Answer {
 
     @ManyToOne
     private Question question;
+
+    @ManyToOne
+    private SiteUser author;
 }

@@ -2,6 +2,7 @@ package lhs.qna.question;
 
 import jakarta.persistence.*;
 import lhs.qna.answer.Answer;
+import lhs.qna.user.SiteUser;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,4 +27,7 @@ public class Question {
 
     @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
     private List<Answer> answerList;
+
+    @ManyToOne
+    private SiteUser author;
 }
