@@ -6,12 +6,12 @@ SpringBoot, JPA를 활용해 QnA 게시판을 만들었습니다.
 
 
 ## 개발 환경
--JAVA 17
--SpringBoot 3.4.0
--JPA
--MySQL
--SpringSecurity
--Git, github
+- JAVA 17
+- SpringBoot 3.4.0
+- JPA
+- MySQL
+- SpringSecurity
+- Git, github
 
 
 ## 구현 기능
